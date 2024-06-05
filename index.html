@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Табы на ванильном JS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:900|Open+Sans:400&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+<div class="wrapper">
+    <h1>WATCH IT !</h1>
+
+    <div class="tabs">
+        <div role="tablist" aria-label="Streaming Content">
+            <button role="tab" aria-selected="true" id="series">
+                📺 Series
+            </button>
+            <button role="tab" aria-selected="false" id="movies">
+                🎥 Movies
+            </button>
+            <button role="tab" aria-selected="false" id="sports">
+                ⚽ Sports
+            </button>
+        </div>
+        <div role="tabpanel" aria-labelledby="series">
+            <p>Best Series</p>
+        </div>
+        <div role="tabpanel" aria-labelledby="movies" hidden>
+            <p>Comedy and action movies</p>
+        </div>
+        <div role="tabpanel" aria-labelledby="sports" hidden>
+            <p>Sport broadcasts</p>
+        </div>
+    </div>
+</div>
+<script src="./start.js"></script>
+</body>
+
+</html>
